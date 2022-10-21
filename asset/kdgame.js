@@ -36,7 +36,7 @@ function startGame() {
   let wrn = document.getElementById('warna').value;
   myGamePiece = new component(30, 30, wrn, 10, 120);
   myBackground = new component(750, 420, "", 0, 0, "background");
-  myScore = new component("20px", "arial", "white", 520, 25, "text");
+  myScore = new component("20px", "arial", "white", 520, 57, "text");
   myObstacles = [];
   myGameArea.start();
   document.querySelector(".smua").remove();
@@ -45,7 +45,7 @@ function startGame() {
 var myGameArea = {
   canvas: document.createElement("canvas"),
   start: function () {
-    this.canvas.width = 700;
+    this.canvas.width = 800;
     this.canvas.height = 470;
     this.context = this.canvas.getContext("2d");
     document.body.insertBefore(this.canvas, document.body

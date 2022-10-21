@@ -16,24 +16,25 @@ body {
 
 .smua{
   overflow: hidden;
-  width: 600px;
-  height: 370px;
+  width: 650px;
+  height: 400px;
   padding:  60px 105px;
   color: white;
   border-radius: 5px;
   position: absolute;
+  border: 1 px solid white;
   background-color: rgba(7, 7, 7, 0.87);
   right: 30%;
-  top: 13%;
+  top: 12%;
   
 }
 
 
 .player{
-  margin-top: 100px;
+  margin-top: 110px;
   font-size: 20px;
   font-weight: 600;
-  margin-left: 500px;
+  margin-left: 440px;
   position: absolute;
   z-index: 1;
   color: white;
@@ -41,12 +42,14 @@ body {
 }
 
 .chose{
+  margin-top: 40px;
   margin-bottom: 60px;
   margin-left: -80px;
 }
 
 .chose label{
   font-size: 17px;
+  font-weight: 500;
   display: inline-block;
   margin-top: 20px;
 }
@@ -96,8 +99,8 @@ canvas{
   
   border-radius: 5px;
   border: 1px solid white;
-  right: 30%;
-  top: 14%;
+  right: 27%;
+  top: 11%;
   display: inline-block;
   border: 1px solid white;
   background-color: #000000c9;
