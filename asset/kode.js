@@ -81,11 +81,9 @@ const loginText = document.querySelector(".title-text .login");
                     title: 'Login Success',
                     text: 'Nice one',
                     html:
-                    '<b>Welcome back, '+ name +'<br> </b>'+
-                    'change page in <strong></strong> sec.',
+                    '<b>Welcome back, '+ name ,
                     timer: 5000,
                     showConfirmButton: false,
-                    iconColor: '#444444',
                     didOpen: () => {
                       
                       timerInterval = setInterval(() => {
@@ -98,15 +96,13 @@ const loginText = document.querySelector(".title-text .login");
                       clearInterval(timerInterval)
                     }
                   })
-                }else if (data.status == 'error')  {
+                }else if (data.status == 'errors')  {
                   Swal.fire({
                     icon: 'error',
                     title: 'Something Went Wrong',
                     text: 'Fill Out The Form',
                     timer: 3000,
                     showConfirmButton: true,
-                    confirmButtonColor:'#444444',
-                    iconColor: '#444444',
                   })
                   return false;
                 } else {
@@ -116,8 +112,6 @@ const loginText = document.querySelector(".title-text .login");
                     text: 'Your Password Not Match',
                     timer: 3000,
                     showConfirmButton: true,
-                    confirmButtonColor:'#444444',
-                    iconColor: '#444444',
                   })
                   return false;
                 }
@@ -129,3 +123,4 @@ const loginText = document.querySelector(".title-text .login");
               }
             })
           })
+          
