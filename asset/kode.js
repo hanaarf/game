@@ -24,11 +24,11 @@ const loginText = document.querySelector(".title-text .login");
            var form = $("#SIGNUPFORM").serialize();
            
            $.ajax({
-             url : "asset/ajax.php",
+             url : "ajax.php",
              method: 'post',
              data: form,
              success: function(res) {
-               if(res === 'successs'){
+               if(res === 'success'){
                  Swal.fire({
                    icon: 'success',
                    title: 'Nice',
@@ -41,7 +41,7 @@ const loginText = document.querySelector(".title-text .login");
          
                  setInterval(function(){
                    location.reload()
-                   },3000)
+                   },2000)
                  
          
                }else {
@@ -68,7 +68,7 @@ const loginText = document.querySelector(".title-text .login");
            
            var form_login = $("#").serialize();
            $.ajax({
-              url : "asset/ajax.php",
+              url : "ajax.php",
               method: 'POST',
               data: form_login,
               success: function(res) {
@@ -124,7 +124,7 @@ const loginText = document.querySelector(".title-text .login");
          
          
                  setInterval(function(){
-                 location.href = "assets/php/game.php"
+                 location.href = "assets/game.php"
                  },5000)
                }
              })
